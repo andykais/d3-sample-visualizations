@@ -1,0 +1,45 @@
+:root{
+  --border-color: rgba(0,0,0,0.5);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'monospace'
+}
+h1,h2,h3,h4,h5 {
+  font-weight: 100;
+  margin:10px 0;
+}
+
+#container {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 600px;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.vis-container {
+  display: inline-grid;
+  text-align: center;
+  margin: 1px;
+}
+.vis {
+  display: inline-grid;
+  border: var(--border-color) solid 1px;
+  box-shadow: 0.5px 0.5px 2px var(--border-color);
+}
+
+#bar-graph {
+  & div {
+    background-color: steelblue;
+    color: white;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+  }
+}
+
+#fractal {
+}
